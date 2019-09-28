@@ -71,18 +71,3 @@ INSERT INTO chapter VALUES (76, 'Riddles in the Dark');
 INSERT INTO chapter VALUES (153, 'Flies and Spiders');
 INSERT INTO chapter VALUES (266, 'Fire and Water');
 INSERT INTO chapter VALUES (289, 'A Theif in the Night');
-
---1
-SELECT * FROM author WHERE first_name = 'Stephen';
-
---2
-SELECT * FROM book WHERE bestseller = 'Yes';
-
---3
-SELECT MAX(num_pages) AS LongestBook FROM book;
-
---4
-SELECT * FROM book EXCEPT SELECT * FROM book WHERE author LIKE 'S%';
-
---5
-SELECT * FROM book ORDER BY num_pages DESC LIMIT 3;
